@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юрий Шаховский](https://up.htmlacademy.ru/htmlcss/15/user/172548).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Шефер]https://htmlacademy.ru/profile/shefer.
 
 ---
 

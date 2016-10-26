@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li>
+            <a href="#">
+              <img src="img/logo.jpg" alt="Sity of Sedona">
+            </a>
+          </li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <form class="booking-options" action="index.html" method="post">
+          <div class="booking-options-comfort">
+            <label>
+              <div class="booking-options-title">
+                <h4>Инфраструктура</h4>
+              </div>
+              <input type="checkbox" name="pool" checked> Басейн
+              <input type="checkbox" name="parking" > Парковка
+              <input type="checkbox" name="wi-fi" > WI-FI
+            </label>
+          </div>
+          <div class="booking-options-type">
+            <label>
+              <div class="booking-options-title">
+                <h4>Тип жилья</h4>
+              </div>
+              <input type="checkbox" name="hotel" checked> Гостиница
+              <input type="checkbox" name="motel" checked> Мотель
+              <input type="checkbox" name="apartments" checked> Аппартаменты
+            </label>
+          </div>
+          <div class="booking-options-price">
+            <label>
+              <div class="booking-options-title">
+                <h4>Стоимость в сутки</h4>
+              </div>
+              <input type="text" name="price-min" placeholder="от 0">
+              <input type="text" name="price-max" placeholder="до 3000">
+              <input type="range" min="0" max="3000" step="100">
+            </label>
+          </div>
+          <div class="booking-options-btn">
+            <input class="options-btn" type="submit" name="show" value="Показать">
+          </div>
+        </form>
+        <div class="">
+
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+     <div class="container">
+       <div class="footer-title">
+         #visitsedona
+       </div>
+       <div class="footer-social">
+          <a class="social-btn social-btn-tv" href="#">твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+          <a class="social-btn social-btn-yt" href="#">ютуб</a>
+       </div>
+       <div class="footer-copyright">
+          <p>website by</p>
+          <a class="footer-btn" href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.jpg" alt="htmlacademy" width="120" height="60"
+            ></a>
+       </div>
+     </div>
+    </footer>
+
+  </body>
+</html>

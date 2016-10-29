@@ -10,14 +10,12 @@
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li>
-            <a href="#">
-              <img src="img/logo.jpg" alt="Sity of Sedona">
-            </a>
-          </li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="#">Гостиницы</a></li>
         </ul>
+        <div class="header-logo">
+          <a href="#"><img src="img/logo.jpg" alt="Sity of Sedona" width="135" height="70"></a>
+        </div>
       </nav>
     </header>
     <main>
@@ -27,17 +25,23 @@
               <div class="booking-options-title">
                 <h4>Инфраструктура</h4>
               </div>
-              <label><input type="checkbox" name="pool" checked> Басейн</label>
-              <label><input type="checkbox" name="parking" > Парковка</label>
-              <label><input type="checkbox" name="wi-fi" > WI-FI</label>
+              <input id="pool" type="checkbox" name="pool" checked>
+              <label for="pool">Басейн</label>
+              <input id="parking" type="checkbox" name="parking" >
+              <label for="parking">Парковка</label>
+              <input id="wifi" type="checkbox" name="wi-fi" >
+              <label for="wifi" >WI-FI</label>
           </div>
           <div class="booking-options-type">
               <div class="booking-options-title">
                 <h4>Тип жилья</h4>
               </div>
-              <label><input type="checkbox" name="hotel" checked> Гостиница</label>
-              <label><input type="checkbox" name="motel" checked> Мотель</label>
-              <label><input type="checkbox" name="apartments" checked> Аппартаменты</label>
+              <input id="hotel" type="checkbox" name="hotel" checked>
+              <label for="hotel">Гостиница</label>
+              <input id="motel" type="checkbox" name="motel" checked>
+              <label for="motel">Мотель</label>
+              <input id="apartments" type="checkbox" name="apartments" checked>
+              <label for="apartments">Аппартаменты</label>
           </div>
           <div class="booking-options-price">
               <div class="booking-options-title">
@@ -45,7 +49,14 @@
               </div>
               <input type="text" name="price-min" placeholder="от 0">
               <input type="text" name="price-max" placeholder="до 3000">
-              <input type="range" min="0" max="3000" step="100">
+              <!-- Бегунок выбора по цене-->
+              <div class="price-bar">
+                <div class="scale">
+                  <div class="scale-active"></div>
+                  <div class="runner-left"></div>
+                  <div class="runner-right"></div>
+                </div>
+              </div>>
           </div>
           <div class="booking-options-btn">
             <input class="options-btn" type="submit" name="show" value="Показать">
@@ -92,7 +103,8 @@
               </ul>
             </div>
             <div class="hotel-rating">
-              <span>Рейтинг: 8,5</span>
+              Рейтинг:
+              <span>8,5</span>
             </div>
           </div>
           <div class="hotel-container">
@@ -115,7 +127,8 @@
               </ul>
             </div>
             <div class="hotel-rating">
-              <span>Рейтинг: 8,9</span>
+              Рейтинг:
+              <span>8,9</span>
             </div>
           </div>
           <div class="hotel-container">
@@ -139,7 +152,8 @@
               </ul>
             </div>
             <div class="hotel-rating">
-              <span>Рейтинг: 9,2</span>
+              Рейтинг:
+              <span> 9,2</span>
             </div>
           </div>
         </div>

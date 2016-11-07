@@ -280,3 +280,24 @@ section {
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
+
+/* Треугольник сортировки вверх*/
+/*.increase {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid blue;
+}*/
+
+/* Треугольник сортировки вниз*/
+/*.descrease {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid blue;
+}
+*/

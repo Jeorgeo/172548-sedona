@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header centering">
       <nav class="main-navigation clearfix">
         <ul>
           <li class="main-navigation_left"><a href="#">Информация</a></li>
@@ -20,14 +20,14 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="centering">
       <section>
         <img src="img/index-main.jpg" alt="Welcome to the Georgeous" width="768" height="512">
         <p>Welcome to the Georgeous<p>
         <h1>Sedona</h1>
         <p>Because the Grand Canyon sucks</p>
       </section>
-      <section class="greeting ">
+      <div class="greeting ">
         <h3>Седона - небольшой городок в аризоне, заслуживающий большего!</h3>
         <p>
           Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
@@ -118,8 +118,7 @@
             Большинство едет в Гранд Каньон и толпиться там
           </p>
         </div>
-      </section
-      <section class="features-booking">
+      </div>
       <section class="features-booking clearfix">
         <h2>Заинтересовались?</h2>
         <p>
@@ -149,9 +148,9 @@
           <div class="booking-people">
             <label for="children">Дети</label>
             <div class="booking-people-btn">
-              <button type="button" name="-">-</button>
+              <button type="button" name="minus">-</button>
               <input id="children" type="text" name="adults" placeholder="0">
-              <button type="button" name="+">+</button>
+              <button type="button" name="plus">+</button>
             </div>
           </div>
           <input type="submit" class="booking-btn" name="find" value="найти">
@@ -162,8 +161,8 @@
         </figure>
       </section>
     </main>
-    <footer class="container clearfix">
-      <div class="main-footer_index">
+    <footer class="centering">
+      <div class="main-footer_index clearfix">
        <div class="footer-title">
          #visitsedona
        </div>

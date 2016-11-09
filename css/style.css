@@ -34,12 +34,11 @@ h2 {
 .centering {
   width: 768px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-header {
-  margin-bottom: 20px;
   /* Только для оформления сетки */
-  min-height: 70px;
   outline: 3px solid blue;
 }
 
@@ -50,16 +49,20 @@ h2 {
 }
 
 .main-navigation {
-  padding: 0 5px 0 5px;
+  position: relative;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
+}
+
+.main-navigation ul {
+  padding: 0;
 }
 
 .main-navigation_left {
   float: left;
   width: 150px;
   /* Только для оформления сетки */
-  min-height: 70px;
+  min-height: 56px;
   outline: 3px solid green;
 }
 
@@ -67,8 +70,34 @@ h2 {
   float: right;
   width: 150px;
   /* Только для оформления сетки */
-  min-height: 70px;
+  min-height: 56px;
   outline: 3px solid green;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 315px;
+}
+
+.index-background {
+  font-size: 0;
+  /* Только для оформления сетки */
+  outline: 3px solid blue;
+}
+
+.index-background h1 {
+  font-size: 0;
+  /* Только для оформления сетки */
+  outline: 3px solid blue;
+}
+
+.greeting {
+  padding-top: 61px;
+  padding-bottom: 56px;
+  /* Только для оформления сетки */
+  min-height: 98px;
+  outline: 3px solid blue;
 }
 
 .features-photo {
@@ -79,7 +108,7 @@ h2 {
 .features-left-title {
   float: left;
   width: 256px;
-  min-height: 256px;
+  margin-top: 40px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -101,21 +130,28 @@ h2 {
 .features-right-title {
   float: right;
   width: 256px;
-  min-height: 256px;
+  margin-top: 40px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
+.features-icons {
+  /* Только для оформления сетки */
+  outline: 3px solid blue;
+}
+
+
 .features-icon {
-  float: left;
-  width: 230px;
-  margin-right: 20px;
+  display: inline-block;
+  width: 210px;
+  padding: 10px;
+  margin: 10px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .features-icon:last-child {
-  float: right;
+  margin-right: 0;
   width: 230px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
@@ -128,7 +164,7 @@ h2 {
 }
 
 .features-item-slogan {
-  float: left;
+  display: inline-block;
   width: 230px;
   margin-right: 25px;
   /* Только для оформления сетки */
@@ -136,7 +172,7 @@ h2 {
 }
 
 .features-item-slogan:last-child {
-  float: right;
+  margin-right: 0;
   width: 230px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
@@ -146,7 +182,6 @@ h2 {
   display: block;
   z-index: 100;
   width: 450px;
-  text-align: center;
   margin-left: 150px;
   margin-right: auto;
   margin-bottom: -150px;
@@ -182,25 +217,25 @@ h2 {
 }
 
 .footer-title {
-  float: left;
-  width: 200px;
-  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 62px;
+  margin-right: 105px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .footer-social {
-  float: left;
-  width: 200px;
-  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 80px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .footer-copyright {
-  float: right;
-  width: 200px;
-  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }

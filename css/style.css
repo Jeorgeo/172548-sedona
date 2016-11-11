@@ -111,7 +111,7 @@ h2 {
 .features-left-title {
   float: left;
   width: 256px;
-  margin-top: 40px;
+  margin-top: 0;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -137,7 +137,7 @@ h2 {
 .features-right-title {
   float: right;
   width: 256px;
-  margin-top: 40px;
+  margin-top: 0;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -228,36 +228,51 @@ h2 {
   outline: 3px solid green;
 }
 
-.main-footer_index {
-  display: inline-block;
+.main-footer {
+  position: relative;
   width: 768px;
-  text-align: center;
-  margin-top: -150px;
+  margin: 0 auto;
+  min-height: 120px;
+  /* Только для оформления сетки */
+  outline: 3px solid blue;
+}
+
+.main-footer_index {
+  position: relative;
+  z-index: 1;
+  width: 768px;
+  margin-top: -120px;
+  padding: 0;
   background: rgba(237, 237, 237, 0.9);
   /* Только для оформления сетки */
+  min-height: 120px;
   outline: 3px solid blue;
 }
 
 .footer-title {
   display: inline-block;
-  vertical-align: middle;
-  margin-left: 62px;
-  margin-right: 105px;
+  position: absolute;
+  top: 50px;
+  left: 62px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .footer-social {
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 80px;
+  position: absolute;
+  top: 37px;
+  left: 307px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .footer-copyright {
   display: inline-block;
-  vertical-align: middle;
+  width: 193px;
+  position: absolute;
+  top: 41px;
+  right: 30px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -265,6 +280,7 @@ h2 {
 .footer-btn {
   display: inline-block;
   background: url("../img/htmlacademy-logo.png") no-repeat;
+  padding: 0;
   width: 113px;
   height: 39px;
 }
@@ -391,12 +407,4 @@ h2 {
   position: absolute;
   bottom: 15px;
   right: 50px;
-}
-
-.main-footer {
-  display: inline-block;
-  width: 768px;
-  margin: 0 auto 0 auto;
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }

@@ -56,6 +56,7 @@ h2 {
 
 .main-navigation ul {
   padding: 0;
+  list-style: none;
 }
 
 .main-navigation_left {
@@ -112,6 +113,9 @@ h2 {
   float: left;
   width: 256px;
   margin-top: 0;
+  min-height: 256px;
+  color: #ffffff;
+  background-color: #81b3d2;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -120,7 +124,7 @@ h2 {
   float: right;
   background: #8aa4c5 url("../img/index-1.jpg") no-repeat;
   width: 512px;
-  height: 256px;
+  min-height: 256px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -129,7 +133,7 @@ h2 {
   float: left;
   background: #8aa4c5 url("../img/index-2.jpg") no-repeat;
   width: 512px;
-  height: 256px;
+  min-height: 256px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -137,7 +141,10 @@ h2 {
 .features-right-title {
   float: right;
   width: 256px;
+  min-height: 256px;
   margin-top: 0;
+  color: #ffffff;
+  background-color: #81b3d2;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -147,9 +154,9 @@ h2 {
   outline: 3px solid blue;
 }
 
-
 .features-icon {
   display: inline-block;
+  vertical-align: top;
   width: 210px;
   padding: 10px;
   margin: 10px;
@@ -159,7 +166,9 @@ h2 {
 
 .features-icon:last-child {
   margin-right: 0;
-  width: 230px;
+  width: 210px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
@@ -172,6 +181,7 @@ h2 {
 
 .features-item-slogan {
   display: inline-block;
+  vertical-align: top;
   width: 230px;
   margin-right: 25px;
   /* Только для оформления сетки */
@@ -241,14 +251,16 @@ h2 {
   z-index: 1;
   margin-top: -120px;
   padding: 0;
-  background: rgba(237, 237, 237, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   /* Только для оформления сетки */
   outline: 3px solid blue;
 }
 
 .footer-title {
   display: inline-block;
-  position: absolute;
+  vertical-align: middle;
+  margin: 50px 62px auto;
+  /*position: absolute;
   top: 50px;
   left: 62px;
   /* Только для оформления сетки */
@@ -257,25 +269,24 @@ h2 {
 
 .footer-social {
   display: inline-block;
-  position: absolute;
-  top: 37px;
-  left: 307px;
+  vertical-align: middle;
+  margin: 50px 62px auto;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .footer-copyright {
   display: inline-block;
+  vertical-align: middle;
+  margin: 50px 30px auto;
   width: 193px;
-  position: absolute;
-  top: 41px;
-  right: 30px;
   /* Только для оформления сетки */
   outline: 3px solid yellow;
 }
 
 .footer-btn {
   display: inline-block;
+  vertical-align: middle;
   background: url("../img/htmlacademy-logo.png") no-repeat;
   padding: 0;
   width: 113px;
@@ -333,6 +344,12 @@ h2 {
   outline: 3px solid yellow;
 }
 
+.filter-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .filter-sorting {
   position: relative;
   float: right;
@@ -369,6 +386,7 @@ h2 {
 .hotel-container {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   margin: 0;
   /* Только для оформления сетки */
@@ -392,6 +410,7 @@ h2 {
 .hotel-discriptions b,
 .hotel-discriptions a {
   display: inline-block;
+  vertical-align: top;
 }
 
 .hotel-stars {

@@ -37,11 +37,6 @@ h2 {
   text-align: center;
 }
 
-.main-header {
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -50,8 +45,6 @@ h2 {
 
 .main-navigation {
   position: relative;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .main-navigation ul {
@@ -64,7 +57,6 @@ h2 {
   width: 150px;
   /* Только для оформления сетки */
   min-height: 56px;
-  outline: 3px solid green;
 }
 
 .main-navigation_right {
@@ -72,7 +64,6 @@ h2 {
   width: 150px;
   /* Только для оформления сетки */
   min-height: 56px;
-  outline: 3px solid green;
 }
 
 .header-logo {
@@ -86,14 +77,10 @@ h2 {
   width: 768px;
   height: 512px;
   font-size: 0;
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .index-background h1 {
   font-size: 0;
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .greeting {
@@ -101,12 +88,6 @@ h2 {
   padding-bottom: 56px;
   /* Только для оформления сетки */
   min-height: 98px;
-  outline: 3px solid blue;
-}
-
-.features-photo {
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .features-left-title {
@@ -116,8 +97,6 @@ h2 {
   min-height: 256px;
   color: #ffffff;
   background-color: #81b3d2;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-right-photo {
@@ -125,8 +104,6 @@ h2 {
   background: #8aa4c5 url("../img/index-1.jpg") no-repeat;
   width: 512px;
   min-height: 256px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-left-photo {
@@ -134,8 +111,6 @@ h2 {
   background: #8aa4c5 url("../img/index-2.jpg") no-repeat;
   width: 512px;
   min-height: 256px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-right-title {
@@ -145,13 +120,6 @@ h2 {
   margin-top: 0;
   color: #ffffff;
   background-color: #81b3d2;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
-}
-
-.features-icons {
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .features-icon {
@@ -160,8 +128,6 @@ h2 {
   width: 210px;
   padding: 10px;
   margin: 10px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-icon:last-child {
@@ -169,14 +135,10 @@ h2 {
   width: 210px;
   padding-top: 7px;
   padding-bottom: 7px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-slogans {
   margin-bottom: 50px;
-  /* Только для оформления сетки */
-  outline: 3px solid green;
 }
 
 .features-item-slogan {
@@ -184,15 +146,11 @@ h2 {
   vertical-align: top;
   width: 230px;
   margin-right: 25px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-item-slogan:last-child {
   margin-right: 0;
   width: 230px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .features-booking {
@@ -214,7 +172,6 @@ h2 {
   box-shadow: 3px 3px 5px #999999;
   /* Только для оформления сетки */
   min-height: 480px;
-  outline: 3px solid yellow;
 }
 
 .booking-title {
@@ -234,8 +191,6 @@ h2 {
   width: 100%;
   margin: auto;
   background: #cbdda9 url("../img/map.png") no-repeat;
-  /* Только для оформления сетки */
-  outline: 3px solid green;
 }
 
 .main-footer {
@@ -243,8 +198,6 @@ h2 {
   width: 768px;
   margin: 0 auto;
   min-height: 120px;
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .main-footer_index {
@@ -252,27 +205,18 @@ h2 {
   margin-top: -120px;
   padding: 0;
   background: rgba(255, 255, 255, 0.9);
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .footer-title {
   display: inline-block;
   vertical-align: middle;
   margin: 50px 62px auto;
-  /*position: absolute;
-  top: 50px;
-  left: 62px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .footer-social {
   display: inline-block;
   vertical-align: middle;
   margin: 50px 62px auto;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .footer-copyright {
@@ -280,8 +224,6 @@ h2 {
   vertical-align: middle;
   margin: 50px 30px auto;
   width: 193px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .footer-btn {
@@ -295,59 +237,55 @@ h2 {
 
 /* hotels.html */
 
-.booking-options {
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
-}
-
 .booking-options-comfort {
   float: left;
   width: 246px;
   margin-right: 15px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
+}
+
+.booking-options-comfort input,
+.booking-options-type input {
+  display: block;
 }
 
 .booking-options-type {
   float: left;
   width: 246px;
   margin-right: 15px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .booking-options-price {
   float: right;
   width: 246px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
-}
-
-.filter-container {
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .filter-title {
   float: left;
   width: 246px;
   margin-right: 15px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
+}
+
+.filter-title h3 {
+  margin: 0;
 }
 
 .filter-items {
   float: left;
   width: 246px;
   margin-right: 15px;
-  /* Только для оформления сетки */
-  outline: 3px solid yellow;
 }
 
 .filter-items ul {
+  display: inline-block;
+  vertical-align: top;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.filter-items li {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .filter-sorting {
@@ -356,7 +294,6 @@ h2 {
   width: 246px;
   /* Только для оформления сетки */
   min-height: 50px;
-  outline: 3px solid yellow;
 }
 
 .increase {
@@ -389,8 +326,6 @@ h2 {
   vertical-align: top;
   width: 100%;
   margin: 0;
-  /* Только для оформления сетки */
-  outline: 3px solid blue;
 }
 
 .hotel-image {
@@ -402,15 +337,16 @@ h2 {
   float: left;
   width: 300px;
   text-align: left;
+  margin-top: 15px;
   margin-right: 20px;
 }
 
 .hotel-discriptions h4,
 .hotel-discriptions p,
-.hotel-discriptions b,
-.hotel-discriptions a {
-  display: inline-block;
-  vertical-align: top;
+.hotel-discriptions b {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hotel-stars {

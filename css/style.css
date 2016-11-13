@@ -1,3 +1,12 @@
+/* index.html */
+
+html,
+body {
+  min-width: 768px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 14px;
   line-height: normal;
@@ -20,4 +29,334 @@ h2 {
   color: #000000;
   font-weight: normal;
   font-family: PT Sans;
+}
+
+.centering {
+  width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation ul {
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation_left {
+  float: left;
+  width: 150px;
+  /* Только для оформления сетки */
+  min-height: 56px;
+}
+
+.main-navigation_right {
+  float: right;
+  width: 150px;
+  /* Только для оформления сетки */
+  min-height: 56px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 315px;
+}
+
+.index-background {
+  background: #8aa4c5 url("../img/index-main.jpg") no-repeat;
+  width: 768px;
+  height: 512px;
+  font-size: 0;
+}
+
+.index-background h1 {
+  font-size: 0;
+}
+
+.greeting {
+  padding-top: 61px;
+  padding-bottom: 56px;
+  /* Только для оформления сетки */
+  min-height: 98px;
+}
+
+.features-left-title {
+  float: left;
+  width: 256px;
+  margin-top: 0;
+  min-height: 256px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-right-photo {
+  float: right;
+  background: #8aa4c5 url("../img/index-1.jpg") no-repeat;
+  width: 512px;
+  min-height: 256px;
+}
+
+.features-left-photo {
+  float: left;
+  background: #8aa4c5 url("../img/index-2.jpg") no-repeat;
+  width: 512px;
+  min-height: 256px;
+}
+
+.features-right-title {
+  float: right;
+  width: 256px;
+  min-height: 256px;
+  margin-top: 0;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 210px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.features-icon:last-child {
+  margin-right: 0;
+  width: 210px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.features-slogans {
+  margin-bottom: 50px;
+}
+
+.features-item-slogan {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  margin-right: 25px;
+}
+
+.features-item-slogan:last-child {
+  margin-right: 0;
+  width: 230px;
+}
+
+.features-booking {
+  position: relative;
+}
+
+.features-booking p {
+  margin-bottom: 120px;
+}
+
+.booking-block {
+  display: block;
+  position: absolute;
+  top: 86px;
+  width: 566px;
+  margin-left: 100px;
+  margin-right: auto;
+  background: rgba(237, 237, 237, 1);
+  box-shadow: 3px 3px 5px #999999;
+  /* Только для оформления сетки */
+  min-height: 480px;
+}
+
+.booking-title {
+  display: block;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.booking-title h4 {
+  padding: 35px;
+  margin: 0;
+}
+
+.features-map {
+  display: block;
+  height: 593px;
+  width: 100%;
+  margin: auto;
+  background: #cbdda9 url("../img/map.png") no-repeat;
+}
+
+.main-footer {
+  position: relative;
+  width: 768px;
+  margin: 0 auto;
+  min-height: 120px;
+}
+
+.main-footer_index {
+  z-index: 1;
+  margin-top: -120px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-title,
+.footer-social,
+.footer-copyright,
+.footer-btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-title {
+  margin: 50px 62px auto;
+}
+
+.footer-social {
+  margin: 50px 30px auto;
+}
+
+.footer-copyright {
+  margin: 50px 30px auto;
+  width: 193px;
+}
+
+.footer-btn {
+  background: url("../img/htmlacademy-logo.png") no-repeat;
+  padding: 0;
+  width: 113px;
+  height: 39px;
+}
+
+/* hotels.html */
+
+.booking-options-comfort {
+  float: left;
+  width: 246px;
+  margin-right: 15px;
+}
+
+.booking-options-comfort input,
+.booking-options-type input {
+  display: block;
+}
+
+.booking-options-type {
+  float: left;
+  width: 246px;
+  margin-right: 15px;
+}
+
+.booking-options-price {
+  float: right;
+  width: 246px;
+}
+
+.filter-title {
+  float: left;
+  width: 246px;
+  margin-right: 15px;
+}
+
+.filter-title h3 {
+  margin: 0;
+}
+
+.filter-items {
+  float: left;
+  width: 246px;
+  margin-right: 15px;
+}
+
+.filter-items ul {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-items li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter-sorting {
+  position: relative;
+  float: right;
+  width: 246px;
+  /* Только для оформления сетки */
+  min-height: 50px;
+}
+
+.increase {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid blue;
+}
+
+.descrease {
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid blue;
+}
+
+.hotel-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0;
+}
+
+.hotel-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.hotel-discriptions {
+  float: left;
+  width: 300px;
+  text-align: left;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.hotel-discriptions h4,
+.hotel-discriptions p,
+.hotel-discriptions b {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hotel-stars {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+}
+
+.hotel-rating {
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
 }

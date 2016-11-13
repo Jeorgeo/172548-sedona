@@ -7,35 +7,34 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
+    <header class="main-header centering">
+      <nav class="main-navigation clearfix">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="main-navigation_left"><a href="#">Информация</a></li>
+          <li class="main-navigation_left"><a href="#">Фото и видео</a></li>
+          <li class="main-navigation_right"><a href="#">Карта штата</a></li>
+          <li class="main-navigation_right"><a href="hotels.html">Гостиницы</a></li>
         </ul>
         <div class="header-logo">
-          <a href="#"><img src="img/logo.png" alt="Sity of Sedona" width="138" height="70"></a>
+          <a href="index.html"><img src="img/logo.png" alt="Sity of Sedona" width="138" height="70"></a>
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <img src="img/index-main.jpg" alt="Welcome to the Georgeous" width="768" height="512">
-        <p>Welcome to the Georgeous<p>
+    <main class="centering">
+      <section class="index-background">
+        <p>Welcome to the Georgeous</p>
         <h1>Sedona</h1>
         <p>Because the Grand Canyon sucks</p>
       </section>
-      <section class="greeting">
-        <h3>Седона - небольшой городок в аризоне, заслуживающий большего!</h3>
+      <div class="greeting ">
+        <h2 class="index-appeal">Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h2>
         <p>
           Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
         </p>
       </div>
-      <div class="features-photo">
-        <div class="features-item-title">
-          <h2>Настоящий городок</h2>
+      <div class="features-photo clearfix">
+        <div class="features-left-title">
+          <h3>Настоящий городок</h3>
           <p>
             &ndash; №1 &ndash;
           </p>
@@ -43,16 +42,15 @@
             Седона &mdash; не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
-        <div class="features-item-photo">
-          <img src="img/index-1.jpg" alt="Настоящий городок" width="512" height="256">
+        <div class="features-right-photo">
         </div>
       </div>
-      <div class="features-icons">
+      <div class="features-icons clearfix">
         <div class="features-icon">
           <div class="icons">
             <img src="img/icon-home.png" alt="Жилье" width="75" height="72">
           </div>
-          <h3>Жилье</h3>
+          <h4>Жилье</h4>
           <p>
             Рекомендуем пожить в настоящем мотеле, все как в кино!
           </p>
@@ -61,7 +59,7 @@
           <div class="icons">
             <img src="img/icon-food.png" alt="Еда" width="74" height="70">
           </div>
-          <h3>Еда</h3>
+          <h4>Еда</h4>
           <p>
             Всегда заказывайте фирменный бургер, вы не разочаруетесь!
           </p>
@@ -70,18 +68,17 @@
           <div class="icons">
             <img src="img/icon-gift.png" alt="Сувениры" width="64" height="76">
           </div>
-          <h3>Сувениры</h3>
+          <h4>Сувениры</h4>
           <p>
             Не только китайского, но и местного производства!
           </p>
         </div>
       </div>
-      <div class="features-photo">
-        <div class="features-item-photo">
-          <img src="img/index-2.jpg" alt="Там есть мост дьявола" width="512" height="256">
+      <div class="features-photo clearfix">
+        <div class="features-left-photo">
         </div>
-        <div class="features-item-title">
-          <h2>Там есть мост дьявола</h2>
+        <div class="features-right-title">
+          <h3>Там есть мост дьявола</h3>
           <p>
             &ndash; №2 &ndash;
           </p>
@@ -90,9 +87,9 @@
           </p>
         </div>
       </div>
-      <div class="features-slogans">
+      <div class="features-slogans clearfix">
         <div class="features-item-slogan">
-          <h2>Небольшая площадь</h2>
+          <h3>Небольшая площадь</h3>
           <p>
             &ndash; №3 &ndash;
           </p>
@@ -101,7 +98,7 @@
           </p>
         </div>
         <div class="features-item-slogan">
-          <h2>Красивая дорога</h2>
+          <h3>Красивая дорога</h3>
           <p>
             &ndash; №4 &ndash;
           </p>
@@ -110,7 +107,7 @@
           </p>
         </div>
         <div class="features-item-slogan">
-          <h2>Мало туристов</h2>
+          <h3>Мало туристов</h3>
           <p>
             &ndash; №5 &ndash;
           </p>
@@ -118,15 +115,15 @@
             Большинство едет в Гранд Каньон и толпиться там
           </p>
         </div>
-      </section
-      <div class="features-booking">
-        <h2>Заинтересовались?</h2>
+      </div>
+      <section class="features-booking clearfix">
+        <h3>Заинтересовались?</h3>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <div class="booking-block">
         <div class="booking-title">
-          <h3>Поиск гостиницы в седоне</h3>
+          <h4>Поиск гостиницы в седоне</h4>
         </div>
         <form class="booking-form" action="index.html" method="post">
           <div class="booking-date">
@@ -148,22 +145,18 @@
           <div class="booking-people">
             <label for="children">Дети</label>
             <div class="booking-people-btn">
-              <button type="button" name="-">-</button>
+              <button type="button" name="minus">-</button>
               <input id="children" type="text" name="adults" placeholder="0">
-              <button type="button" name="+">+</button>
+              <button type="button" name="plus">+</button>
             </div>
-
           </div>
           <input type="submit" class="booking-btn" name="find" value="найти">
         </form>
         </div>
-        <figure class="features-map">
-          <img src="img/map.png" alt="карта" width="768" height="593">
-        </figure>
-      </div>
+        <div class="features-map"></div>
+      </section>
     </main>
-    <footer class="main-footer">
-     <div class="container">
+    <footer class="main-footer main-footer_index">
        <div class="footer-title">
          #visitsedona
        </div>
@@ -173,12 +166,11 @@
           <a class="social-btn social-btn-yt" href="#">ютуб</a>
        </div>
        <div class="footer-copyright">
-          <p>website by</p>
-          <a class="footer-btn" href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.png" alt="htmlacademy" width="113" height="39"
-            ></a>
+         <span>website by</span>
+         <a class="footer-btn" href="https://htmlacademy.ru">
+           <img src="img/htmlacademy-logo.png" alt="htmlacademy" width="113" height="39">
+         </a>
        </div>
-     </div>
     </footer>
-
   </body>
 </html>

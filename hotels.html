@@ -50,19 +50,24 @@
             <div class="booking-options-title">
               <h4>Стоимость в сутки</h4>
             </div>
-            <input type="text" name="price-min" placeholder="от 0">
-            <input type="text" name="price-max" placeholder="до 3000">
-            <!-- Бегунок выбора по цене. При стилизации удалить input type="range"-->
-            <div class="price-bar">
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="text" name="min-price" value="0">
+              </label>
+              <label class="min-price">
+                до <input type="text" name="max-price" value="3000">
+              </label>
+              <!-- Бегунок выбора по цене. При стилизации удалить input type="range"-->
+            </div>
+            <div class="range-controls">
               <div class="scale">
-                <input type="range" min="0" max="3000" step="100">
-                <div class="scale-active"></div>
-                <div class="runner-left"></div>
-                <div class="runner-right"></div>
+                <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
             <div class="booking-options-btn">
-              <input class="options-btn" type="submit" name="show" value="Показать">
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
           </div>
         </form>
@@ -170,10 +175,8 @@
         <a class="social-btn social-btn-yt" href="#">ютуб</a>
       </div>
       <div class="footer-copyright">
-        website by
-        <a class="footer-btn" href="https://htmlacademy.ru">
-          <img src="img/htmlacademy-logo.png" alt="htmlacademy" width="113" height="39">
-        </a>
+        <span>website by</span>
+        <a class="footer-btn" href="https://htmlacademy.ru"></a>
       </div>
     </footer>
 

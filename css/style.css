@@ -36,6 +36,7 @@ h2 {
   width: 768px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 15px 30px 5px #999999;
 }
 
 .clearfix::after {
@@ -66,6 +67,14 @@ h2 {
 .main-navigation a {
   text-decoration: none;
   color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #b2b2b2;
 }
 
 .main-navigation_left {
@@ -312,18 +321,24 @@ h2 {
   background-position: -917px 0;
 }
 
-.social-btn-tv:hover,
-.social-btn-fb:hover,
-.social-btn-yt:hover {
-  background-color: #669ec0;
-}
-
 .social-btn-fb {
   background-position: -961px -2px;
 }
 
 .social-btn-yt {
   background-position: -1006px 0;
+}
+
+.social-btn-tv:hover,
+.social-btn-fb:hover,
+.social-btn-yt:hover {
+  background-color: #669ec0;
+}
+
+.social-btn-tv:active,
+.social-btn-fb:active,
+.social-btn-yt:active {
+  background-color: #5496bd;
 }
 
 .footer-copyright {
@@ -347,6 +362,10 @@ h2 {
 
 .footer-btn:hover {
   background-position: -454px -15px;
+}
+
+.footer-btn:active {
+  background-position: -311px -15px;
 }
 
 /* hotels.html */
@@ -375,7 +394,7 @@ h2 {
 .type-checkbox {
   display: block;
   position: relative;
-  padding-left: 30px;
+  padding: 0 0 28px 38px;
   cursor: pointer;
 }
 
@@ -409,6 +428,16 @@ h2 {
   background: url("../img/spritesheet.png") no-repeat -761px -15px;
 }
 
+.comfort-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator,
+.type-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 26px;
+  height: 22px;
+  background: url("../img/spritesheet.png") no-repeat -597px -15px;
+}
+
 .booking-options-type {
   float: left;
   width: 210px;
@@ -423,10 +452,14 @@ h2 {
 }
 
 .booking-options-title {
-  margin-bottom: 9px;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+}
+
+.booking-options-price .booking-options-title h4 {
+  margin-bottom: 7px;
 }
 
 .price-controls {
@@ -533,8 +566,9 @@ h2 {
 
 .filter-container {
   width: auto;
-  padding: 29px 45px;
+  padding: 30px 45px;
   text-align: left;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .filter-title {
@@ -552,7 +586,16 @@ h2 {
 
 .filter-items {
   float: left;
-  width: 360px;
+  width: 400px;
+}
+
+.filter-items-sorting {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 40px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .filter-items ul {
@@ -566,6 +609,29 @@ h2 {
 .filter-items li {
   display: inline-block;
   vertical-align: top;
+  margin: 5px 33px 0 0;
+}
+
+.filter-items a {
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #b2b2b2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.filter-items .filter-active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.filter-items a:hover {
+  color: #81b3d2;
+}
+
+.filter-items a:active {
+  color: #000000;
+  border-bottom: none;
 }
 
 .filter-sorting {
@@ -577,7 +643,7 @@ h2 {
 .increase {
   position: absolute;
   top: 5px;
-  right: 20px;
+  right: 0;
   font-size: 0;
   width: 0;
   height: 0;
@@ -590,10 +656,14 @@ h2 {
   border-bottom: 10px solid #000000;
 }
 
+.increase:active {
+  border-bottom: 10px solid #81b3d2;
+}
+
 .descrease {
   position: absolute;
   top: 5px;
-  right: 35px;
+  right: 15px;
   font-size: 0;
   width: 0;
   height: 0;
@@ -606,43 +676,158 @@ h2 {
   border-top: 10px solid #000000;
 }
 
+.descrease:active {
+  border-top: 10px solid #81b3d2;
+}
+
 .hotel-container {
-  position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  box-sizing: border-box;
+  width: 768px;
   margin: 0;
+  padding: 30px 45px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-image {
   float: left;
-  margin-right: 20px;
+  margin: 0;
+}
+
+.hotel-about {
+  float: left;
+  width: 110px;
+  margin-right: 8px;
+}
+
+.hotel-book {
+  float: left;
+  width: 142px;
 }
 
 .hotel-discriptions {
   float: left;
-  width: 300px;
   text-align: left;
-  margin-top: 15px;
-  margin-right: 20px;
+  width: 260px;
+  margin-left: 31px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .hotel-discriptions h4,
-.hotel-discriptions p,
-.hotel-discriptions b {
+.hotel-discriptions p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-discriptions h4 {
+  margin-bottom: 10px;
   display: block;
-  margin-top: 0;
-  margin-bottom: 0;
+}
+
+.discriptions-title {
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.discriptions-title:hover {
+  color: #81b3d2;
+}
+
+.discriptions-title:active {
+  color: #b2b2b2;
+}
+
+.hotel-about-btn {
+  float: left;
+  width: 110px;
+  margin-top: 8px;
+  padding: 3px 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.hotel-about-btn:hover {
+  background-color: #669ec0;
+}
+
+.hotel-about-btn:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.hotel-book-btn {
+  float: right;
+  width: 142px;
+  margin-top: 8px;
+  padding: 3px 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.hotel-book-btn:hover {
+  background-color: #604e43;
+}
+
+.hotel-book-btn:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.hotel-store {
+  float: right;
+  width: 110px;
 }
 
 .hotel-stars {
-  position: absolute;
-  top: 15px;
-  right: 50px;
+  display: block;
+  width: 110px;
+  margin-top: 0;
+  font-size: 0;
 }
 
+.five-stars {
+  float: right;
+  width: 89px;
+  height: 17px;
+  background: #ffffff url("../img/spritesheet.png") no-repeat -813px -15px;
+}
+
+.two-stars {
+  float: right;
+  width: 44px;
+  height: 17px;
+  background: #ffffff url("../img/spritesheet.png") no-repeat -813px -15px;
+}
+
+.three-stars {
+  float: right;
+  width: 66px;
+  height: 17px;
+  background: #ffffff url("../img/spritesheet.png") no-repeat -813px -15px;
+}
+
+
 .hotel-rating {
-  position: absolute;
-  bottom: 15px;
-  right: 50px;
+  display: block;
+  width: 110px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 62px;
+  padding: 3px 0;
+  background-color: #f2f2f2;
 }

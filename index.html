@@ -99,26 +99,28 @@
           <form class="booking-form" action="index.html" method="post">
             <div class="booking-date">
               <label for="date-in">Дата заезда</label>
-              <input id="date-in" type="text" name="date-in" placeholder="24 апреля 2016">
+              <input  type="text" name="date-in" placeholder="24 апреля 2016">
+              <span class="calendar"></span>
             </div>
             <div class="booking-date">
               <label for="date-out">Дата выезда</label>
               <input id="date-out" type="text" name="date-out" placeholder=" 4 июня 2016">
+              <span class="calendar"></span>
             </div>
-            <div class="booking-people">
+            <div class="booking-people adults">
               <label for="adults" >Взрослые</label>
               <div class="booking-people-btn">
-                <button type="button" name="-">-</button>
+                <span class="minus">-</span>
                 <input id="adults" type="text" name="adults" placeholder="2">
-                <button type="button" name="+">+</button>
+                <span class="plus">+</span>
               </div>
             </div>
-            <div class="booking-people">
+            <div class="booking-people children">
               <label for="children">Дети</label>
               <div class="booking-people-btn">
-                <button type="button" name="minus">-</button>
+                <span class="minus">-</span>
                 <input id="children" type="text" name="adults" placeholder="0">
-                <button type="button" name="plus">+</button>
+                <span class="plus">+</span>
               </div>
             </div>
             <input type="submit" class="booking-btn" name="find" value="найти">

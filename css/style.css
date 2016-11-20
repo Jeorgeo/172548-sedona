@@ -252,14 +252,6 @@ h2 {
   left: 50%;
   margin-left: -283px;
   background: rgba(237, 237, 237, 1);
-  /* Только для оформления сетки */
-  min-height: 480px;
-}
-
-.booking-form {
-  box-shadow: 0 10px 30px 5px #999999;
-  /* Только для оформления сетки */
-  min-height: 394px;
 }
 
 .booking-title {
@@ -276,6 +268,185 @@ h2 {
   margin: 0;
 }
 
+.booking-form {
+  padding: 55px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px 5px #999999;
+}
+
+.booking-date {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 456px;
+  height: 38px;
+  margin-bottom: 29px;
+}
+
+.booking-date label,
+.booking-people label {
+  float: left;
+  width: 110px;
+  padding-top: 6px;
+}
+
+.booking-people.children label {
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.booking-date input {
+  float: right;
+  box-sizing: border-box;
+  width: 345px;
+  height: 38px;
+  padding-left: 15px;
+  padding-right: 35px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.booking-date input:hover {
+  border: none;
+  background-color: #ebebeb;
+}
+
+.booking-date input:active {
+  background-color: #ffffff;
+}
+
+.calendar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 21px;
+  height: 21px;
+  background: url("../img/spritesheet.png") no-repeat -15px -15px;
+}
+
+.calendar:hover {
+  background-position: -117px -15px;
+}
+
+.calendar:active {
+  background-position: -66px -15px;
+}
+
+.booking-people.adults {
+  display: inline-block;
+  width: 222px;
+  margin: 0;
+}
+
+.booking-people.children {
+  display: inline-block;
+  width: 230px;
+  margin: 0;
+}
+
+.booking-people-btn {
+  float: right;
+  position: relative;
+  width: 112px;
+  text-align: center;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.minus,
+.plus {
+  font-size: 0;
+}
+
+.plus::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.plus::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+}
+
+.minus::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.plus:hover::before,
+.plus:hover::after,
+.minus:hover::before {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.plus:active::before,
+.plus:active::after,
+.minus:active::before {
+  background-color: #81b3d2;
+}
+
+.booking-people-btn input {
+  width: 36px;
+  height: 38px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.booking-form .booking-btn {
+  clear: both;
+  width: 100%;
+  margin-top: 32px;
+  padding: 0;
+  height: 58px;
+  font-size: 21px;
+  color: #ffffff;
+  border: none;
+  background-color: #81b3d2;
+}
+
+.booking-btn:hover {
+  border: none;
+  background-color: #669ec0;
+}
+
+.booking-btn:active {
+  border: none;
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.booking-form input {
+  font-weight: bold;
+}
+
 .features-map {
   display: block;
   height: 593px;
@@ -286,15 +457,14 @@ h2 {
 
 .main-footer {
   position: relative;
-  width: 768px;
-  margin: 0 auto;
+  text-align: left;
+  padding: 0 30px 0 45px;
   min-height: 120px;
 }
 
 .main-footer_index {
   z-index: 1;
   margin-top: -120px;
-  padding: 0;
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -307,7 +477,7 @@ h2 {
 }
 
 .footer-title {
-  margin: 40px 112px auto 62px;
+  margin: 40px 110px auto 12px;
   font-size: 21px;
   font-weight: bold;
   line-height: 24px;
@@ -366,7 +536,7 @@ h2 {
 }
 
 .footer-copyright {
-  margin: 39px 0 auto 25px;
+  margin: 39px 0 auto 74px;
 }
 
 .footer-copyright span {
@@ -666,9 +836,12 @@ h2 {
 
 .increase {
   position: absolute;
+  margin: 0;
+  padding: 0;
   top: 5px;
   right: 0;
   font-size: 0;
+  text-decoration: none;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -678,6 +851,7 @@ h2 {
 
 .increase:hover {
   border-bottom: 10px solid #000000;
+  cursor: pointer;
 }
 
 .increase:active {
@@ -686,9 +860,12 @@ h2 {
 
 .descrease {
   position: absolute;
+  margin: 0;
+  padding: 0;
   top: 5px;
   right: 15px;
   font-size: 0;
+  text-decoration: none;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -698,6 +875,7 @@ h2 {
 
 .descrease:hover {
   border-top: 10px solid #000000;
+  cursor: pointer;
 }
 
 .descrease:active {

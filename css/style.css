@@ -350,7 +350,19 @@ h2 {
 .social-btn-tv:active,
 .social-btn-fb:active,
 .social-btn-yt:active {
-  background-color: #5496bd;
+  background: #5496bd url("../img/spritesheet_active.png") no-repeat;
+}
+
+.social-btn-tv:active {
+  background-position: -40px -1px;
+}
+
+.social-btn-fb:active {
+  background-position: 2px -2px;
+}
+
+.social-btn-yt:active {
+  background-position: -89px 0;
 }
 
 .footer-copyright {

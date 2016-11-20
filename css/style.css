@@ -214,11 +214,12 @@ h2 {
 }
 
 .features-item-slogan h3 {
-  padding: 0 90px;
+  padding: 0 70px;
 }
 
 .features-item-slogan p {
   padding: 0 40px;
+  word-wrap: break-word;
 }
 
 .features-item-slogan:nth-child(2) p {

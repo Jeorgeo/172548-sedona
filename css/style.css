@@ -431,6 +431,7 @@ h2 {
   color: #ffffff;
   border: none;
   background-color: #81b3d2;
+  outline: none;
 }
 
 .booking-btn:hover {
@@ -962,6 +963,7 @@ h2 {
   text-decoration: none;
   color: #ffffff;
   background-color: #81b3d2;
+  outline: none;
 }
 
 .hotel-about-btn:hover {
@@ -984,6 +986,7 @@ h2 {
   text-decoration: none;
   color: #ffffff;
   background-color: #766357;
+  outline: none;
 }
 
 .hotel-book-btn:hover {

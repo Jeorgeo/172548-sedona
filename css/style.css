@@ -124,14 +124,18 @@ h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  padding-bottom: 33px;
+  padding-bottom: 35px;
 }
 
 .greeting p {
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
-  padding: 25px 0 10px 0;
+  padding: 0 0 10px 0;
+}
+
+.features-photo {
+  background-color: #81b3d2;
 }
 
 .features-photo h3 {
@@ -289,6 +293,7 @@ h2 {
   font-weight: bold;
   line-height: 26px;
   text-align: left;
+  outline: none;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 10px 30px 5px #999999;
@@ -714,6 +719,7 @@ h2 {
   font: inherit;
   background: none;
   border: none;
+  outline: none;
 }
 
 .range-controls {

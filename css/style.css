@@ -50,15 +50,15 @@ h2 {
 }
 
 .main-navigation ul {
-  margin: 0;
+  margin: 0 17px;
   padding: 0;
   list-style: none;
 }
 
 .main-navigation li {
   display: inline-block;
-  padding: 16px 0;
   vertical-align: top;
+  padding: 17px 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -118,40 +118,53 @@ h2 {
 }
 
 .greeting {
-  padding: 54px 50px 52px;
+  margin: 57px 45px;
+}
+
+.greeting h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  padding-bottom: 33px;
 }
 
 .greeting p {
   font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
 }
 
 .features-photo h3 {
+  padding: 0 0 22px 0;
   margin: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
 }
 
-.features-photo p {
-  margin: 25px 35px 25px;
+.features-photo p,
+.features-photo span {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
+}
+
+.features-photo span {
+  display: block;
+  padding: 0 0 21px 0;
 }
 
 .features-left-title {
   float: left;
   width: 256px;
-  margin-top: 0;
   min-height: 256px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 48px 41px 39px 38px;
+  text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-}
-
-.features-left-title h3 {
-  margin: 50px 55px 26px 50px;
 }
 
 .features-right-photo {
@@ -169,16 +182,15 @@ h2 {
 }
 
 .features-right-title {
-  float: right;
+  float: left;
   width: 256px;
   min-height: 256px;
-  margin-top: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 48px 47px 39px 38px;
+  text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-}
-
-.features-right-title h3 {
-  margin: 50px 50px 26px 55px;
 }
 
 .features-icon {
@@ -208,22 +220,22 @@ h2 {
 .features-item-slogan {
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
   margin: 0;
-  padding: 44px 0 40px;
+  padding: 44px 45px 40px 45px;
   width: 253px;
 }
 
 .features-item-slogan h3 {
-  padding: 0 70px;
+  padding: 0 20px;
 }
 
 .features-item-slogan p {
-  padding: 0 40px;
   word-wrap: break-word;
 }
 
 .features-item-slogan:nth-child(2) p {
-  padding: 0 60px;
+  padding: 0 10px;
 }
 
 .features-booking {
@@ -248,7 +260,7 @@ h2 {
 .booking-block {
   display: block;
   position: absolute;
-  bottom: 200px;
+  bottom: 210px;
   width: 566px;
   left: 50%;
   margin-left: -283px;

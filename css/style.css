@@ -48,7 +48,7 @@ h2 {
 }
 
 .main-navigation ul {
-  margin: 0 45px;
+  margin: 0 6%;
   padding: 0;
   list-style: none;
 }
@@ -57,7 +57,7 @@ h2 {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-  padding: 17px 0;
+  padding: 14px 0 15px 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -91,11 +91,13 @@ h2 {
 .main-navigation_left {
   float: left;
   width: 20%;
+  text-align: left;
 }
 
 .main-navigation_right {
   float: right;
   width: 20%;
+  text-align: right;
 }
 
 .header-logo {
@@ -117,14 +119,14 @@ h2 {
 }
 
 .greeting {
-  margin: 57px 45px;
+  margin: 57px 45px 49px 45px;
 }
 
 .greeting h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  padding-bottom: 35px;
+  padding-bottom: 10px;
 }
 
 .greeting p {
@@ -139,7 +141,7 @@ h2 {
 }
 
 .features-photo h3 {
-  padding: 0 0 22px 0;
+  padding: 0 0 24px 0;
   margin: 0;
   font-size: 21px;
   font-weight: bold;
@@ -165,7 +167,7 @@ h2 {
   min-height: 256px;
   box-sizing: border-box;
   margin: 0;
-  padding: 48px 39px 39px 38px;
+  padding: 48px 39px 37px 38px;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
@@ -191,7 +193,7 @@ h2 {
   min-height: 256px;
   box-sizing: border-box;
   margin: 0;
-  padding: 48px 47px 39px 38px;
+  padding: 46px 45px 39px 45px;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
@@ -206,6 +208,7 @@ h2 {
 }
 
 .features-icon h4 {
+  margin: 21px 0;
   font-size: 21px;
   font-weight: bold;
   color: #000000;
@@ -213,11 +216,13 @@ h2 {
 
 .features-icon p {
   font-size: 14px;
+  line-height: 21px;
   margin: 0 45px;
   color: #333333;
 }
 
 .features-slogans {
+  padding: 44px 0 23px 0;
   background-color: #eeeeee;
 }
 
@@ -226,17 +231,21 @@ h2 {
   vertical-align: top;
   box-sizing: border-box;
   margin: 0;
-  padding: 44px 45px 40px 45px;
+  padding: 0 45px;
   width: 33%;
 }
 
 .features-item-slogan h3 {
+  margin: 2px 0 25px 0;
   padding: 0 20px;
   font-size: 21px;
+  line-height: 21px;
   color: #000000;
 }
 
 .features-item-slogan p {
+  margin-bottom: 24px;
+  padding: 0;
   word-wrap: break-word;
 }
 
@@ -252,11 +261,12 @@ h2 {
   font-size: 31px;
   line-height: 24px;
   color: #000000;
-  padding: 44px 0 14px;
+  padding: 57px 0 14px;
   margin: 0;
 }
 
 .features-booking p {
+  margin: 15px 0 5px 0;
   padding: 0 120px 128px;
   font-size: 14px;
   line-height: 24px;
@@ -266,7 +276,7 @@ h2 {
 .booking-block {
   display: block;
   position: absolute;
-  bottom: 210px;
+  bottom: 205px;
   width: 566px;
   left: 50%;
   margin-left: -283px;
@@ -283,7 +293,7 @@ h2 {
 }
 
 .booking-title h4 {
-  padding: 35px;
+  padding: 31px;
   margin: 0;
 }
 
@@ -317,7 +327,7 @@ h2 {
 
 .booking-people.children label {
   box-sizing: border-box;
-  padding-left: 50px;
+  padding-left: 53px;
 }
 
 .booking-date input {
@@ -443,7 +453,7 @@ h2 {
 .booking-form .booking-btn {
   clear: both;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 45px;
   height: 58px;
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
@@ -499,7 +509,7 @@ h2 {
 }
 
 .footer-title {
-  margin: 40px 110px auto 12px;
+  margin: 35px 108px auto 15px;
   font-size: 21px;
   font-weight: bold;
   line-height: 24px;
@@ -558,7 +568,7 @@ h2 {
 }
 
 .footer-copyright {
-  margin: 39px 0 auto 74px;
+  margin: 39px 0 auto 75px;
 }
 
 .footer-copyright span {
@@ -566,7 +576,7 @@ h2 {
   font-weight: normal;
   line-height: 26px;
   color: #000000;
-  padding-right: 7px;
+  padding-right: 5px;
 }
 
 .footer-btn {
